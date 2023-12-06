@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h3 class="logo">Mini Coding Project</h3>
+      <nav class="navbar">
+        <a href="#luas">Luas Segitiga</a>
+        <a href="#keliling">Keliling Segitiga</a>
+      </nav>
+    </header>
+    <main>
+      <hr id="luas" />
+      <h1 class="judul">Luas Segitiga</h1>
+      <section class="rumus">
+        <div class="rumus-angka">
+          <h3>Rumus Luas Segitiga</h3>
+          <h3>L = 1/2 x a x t</h3>
+          <p>L = Luas</p>
+          <p>a = Alas</p>
+          <p>t = Tinggi</p>
+        </div>
+        <img class="img-rumus" src="img/luas-segitiga.png" alt="luas-segitiga" />
+      </section>
+      <section class="container-input">
+        <label for="input-alas">Alas</label>
+        <input type="number" id="input-alas" placeholder="Input Nilai Alas" />
+        <label for="input-tinggi">Tinggi</label>
+        <input type="number" id="input-tinggi" placeholder="Input Nilai Tinggi" />
+        <div class="container-button">
+          <button id="submit-luas" onclick="hitungLuas()">Hitung</button>
+          <button id="reset-luas">Reset</button>
+        </div>
+        <div id="hasil-luas"></div>
+      </section>
+      <hr id="keliling" />
+      <h1 class="judul">Keliling Segitiga</h1>
+      <section class="rumus">
+        <div class="rumus-angka">
+          <h3>Rumus Keliling Segitiga</h3>
+          <h3>K = s + s + s</h3>
+          <p>K = Keliling</p>
+          <p>s = Sisi</p>
+        </div>
+        <img class="img-rumus" src="img/keliling-segitiga.png" alt="keliling-segitiga" />
+      </section>
+      <section class="container-input">
+        <label for="input-kiri">Sisi Kiri</label>
+        <input type="number" id="input-kiri" placeholder="Input Nilai Kiri" />
+        <label for="input-kanan">Sisi Kanan</label>
+        <input type="number" id="input-kanan" placeholder="Input Nilai Kanan" />
+        <label for="input-bawah">Sisi Bawah</label>
+        <input type="number" id="input-bawah" placeholder="Input Nilai Bawah" />
+        <div class="container-button">
+          <button id="submit-keliling">Hitung</button>
+          <button id="reset-keliling">Reset</button>
+        </div>
+        <p id="hasil-keliling"></p>
+      </section>
+      <hr />
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
